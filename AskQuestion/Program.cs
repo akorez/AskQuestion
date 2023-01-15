@@ -11,7 +11,7 @@ var APIkey = Configuration["APIkey"];
 
 while (true)
 {
-    Console.WriteLine("Lutfen soru sorunuz!");
+    Console.WriteLine("Please ask your question!");
     string question = Console.ReadLine();
 
     if (question.Contains("q") || question.ToLower().Contains("quit"))
@@ -19,7 +19,7 @@ while (true)
 
     if (question.Length > 0)
     {
-        HttpClient client = new HttpClient();
+        HttpClient client = new HttpClient(); 
 
         client.DefaultRequestHeaders.Add("authorization", $"Bearer {APIkey}");
 
