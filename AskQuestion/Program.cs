@@ -14,7 +14,7 @@ while (true)
     Console.WriteLine("Please ask your question!");
     string question = Console.ReadLine();
 
-    if (question.Contains("q") || question.ToLower().Contains("quit"))
+    if (question.Trim().ToLower() =="quit" || question.Trim().ToLower() == "q")
         break;
 
     if (question.Length > 0)
@@ -33,10 +33,8 @@ while (true)
         try
         {
             var dyData = JsonConvert.DeserializeObject<dynamic>(responseString);
-
-            string guess = GuessCommand(dyData!.choices[0].text);
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine($"---> ChatGPT answer is: {guess}");
+            Console.WriteLine($"---> ChatGPT answer is: {dyData!.choices[0].text}");
             Console.ResetColor();
 
         }
@@ -49,13 +47,5 @@ while (true)
     else
     {
         Console.WriteLine("---> You need to ask a question");
-    }
-
-    static string GuessCommand(string raw)
-    {
-        var lastIndex = raw.LastIndexOf('\n');
-        string guess = raw.Substring(lastIndex + 1);
-
-        return guess;
     }
 }
