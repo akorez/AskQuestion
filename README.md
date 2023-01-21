@@ -1,7 +1,7 @@
 # OpenAI based QAChat App : AskQuestion
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/34706028/213882005-78262cde-b02f-4345-b170-5ab4044e7a10.gif)
+A simple C# .NET QAChat app to use with OpenAI's GPT-3 API.
 
-A simple C# .NET QAChat app to use with OpenAI's GPT-3 API. 
+![gif](https://user-images.githubusercontent.com/34706028/213882005-78262cde-b02f-4345-b170-5ab4044e7a10.gif)
 
 # Requirements
 This library is based on .NET Core 6.0, so it should work across .NET Framework >=4.7.2 and .NET Core >= 3.0. It should work across console apps, winforms, wpf, asp.net, etc. 
