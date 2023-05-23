@@ -1,5 +1,5 @@
 # OpenAI based QAChat App : AskQuestion
-A simple C# .NET QAChat app to use with OpenAI's GPT-3 API.
+A simple C# .NET QAChat app to use with OpenAI's GPT-3.5 API.
 
 ![gif](https://user-images.githubusercontent.com/34706028/213882005-78262cde-b02f-4345-b170-5ab4044e7a10.gif)
 
